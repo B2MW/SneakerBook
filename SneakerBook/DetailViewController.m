@@ -74,7 +74,8 @@
 
 - (IBAction)undoChanges:(id)sender
 {
-
+    self.genderControl.selectedSegmentIndex = self.person.gender.integerValue;
+    self.favoriteControl.selectedSegmentIndex = self.person.favorite.integerValue;
 }
 
 @end
