@@ -19,15 +19,6 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem {
-//    if (_detailItem != newDetailItem) {
-//        _detailItem = newDetailItem;
-//            
-//        // Update the view.
-//        [self configureView];
-//    }
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 

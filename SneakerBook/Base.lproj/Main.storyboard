@@ -138,7 +138,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M3B-MB-NH5">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="M3B-MB-NH5">
                                 <rect key="frame" x="342" y="161" width="92" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="53y-vD-THW"/>
@@ -149,6 +149,26 @@
                                     <segment title="No"/>
                                 </segments>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjF-hR-dWQ">
+                                <rect key="frame" x="205" y="197" width="103" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DtJ-DN-LXj"/>
+                                    <constraint firstAttribute="width" constant="103" id="yWL-HE-D66"/>
+                                </constraints>
+                                <state key="normal" title="Undo Changes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aus-9N-2PH">
+                                <rect key="frame" x="400" y="197" width="34" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RuP-X7-EGU"/>
+                                    <constraint firstAttribute="width" constant="34" id="o27-Ck-EZO"/>
+                                </constraints>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -158,11 +178,16 @@
                             <constraint firstItem="zz4-ej-1aP" firstAttribute="leading" secondItem="D7W-6W-vby" secondAttribute="leading" id="8Dl-Ks-tf2"/>
                             <constraint firstItem="D7W-6W-vby" firstAttribute="top" secondItem="Lei-5M-9Gs" secondAttribute="bottom" constant="27" id="AvC-RX-hp4"/>
                             <constraint firstItem="tDD-XA-fTK" firstAttribute="top" secondItem="D7W-6W-vby" secondAttribute="bottom" constant="4" id="BhH-pS-AsB"/>
+                            <constraint firstItem="M3B-MB-NH5" firstAttribute="trailing" secondItem="Aus-9N-2PH" secondAttribute="trailing" id="Cbv-rF-UCo"/>
                             <constraint firstItem="M3B-MB-NH5" firstAttribute="leading" secondItem="TfV-BT-V93" secondAttribute="trailing" constant="27" id="EOe-Sh-w9C"/>
+                            <constraint firstItem="Aus-9N-2PH" firstAttribute="top" secondItem="M3B-MB-NH5" secondAttribute="bottom" constant="8" id="GHC-BE-1xs"/>
                             <constraint firstItem="TfV-BT-V93" firstAttribute="top" secondItem="D7W-6W-vby" secondAttribute="bottom" constant="24" id="HzJ-cp-OA5"/>
                             <constraint firstItem="Lei-5M-9Gs" firstAttribute="centerY" secondItem="MMQ-IT-qOo" secondAttribute="centerY" constant="-219.5" id="JzS-HC-Rnl"/>
                             <constraint firstItem="M3B-MB-NH5" firstAttribute="top" secondItem="D7W-6W-vby" secondAttribute="bottom" constant="24" id="LBg-NS-M6a"/>
+                            <constraint firstItem="Aus-9N-2PH" firstAttribute="leading" secondItem="HjF-hR-dWQ" secondAttribute="trailing" constant="92" id="OXH-fn-wPH"/>
                             <constraint firstItem="zz4-ej-1aP" firstAttribute="top" secondItem="Lei-5M-9Gs" secondAttribute="bottom" constant="14" id="c6C-1x-K7z"/>
+                            <constraint firstItem="HjF-hR-dWQ" firstAttribute="top" secondItem="TfV-BT-V93" secondAttribute="bottom" constant="8" id="kF4-ej-Acc"/>
+                            <constraint firstItem="HjF-hR-dWQ" firstAttribute="leading" secondItem="TfV-BT-V93" secondAttribute="leading" id="mlV-cn-ZLO"/>
                             <constraint firstAttribute="trailing" secondItem="Lei-5M-9Gs" secondAttribute="trailing" constant="20" id="pXB-RP-Zz6"/>
                             <constraint firstItem="TfV-BT-V93" firstAttribute="leading" secondItem="D7W-6W-vby" secondAttribute="leading" id="sv8-BC-Rwo"/>
                             <constraint firstAttribute="centerX" secondItem="zz4-ej-1aP" secondAttribute="centerX" id="x8Y-9S-C3R"/>
