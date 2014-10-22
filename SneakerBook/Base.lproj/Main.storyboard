@@ -87,64 +87,95 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7W-6W-vby">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7W-6W-vby">
                                 <rect key="frame" x="205" y="116" width="191" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="kvN-bq-bJW"/>
+                                    <constraint firstAttribute="height" constant="21" id="swj-49-dZZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wr8-6K-GLf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wr8-6K-GLf">
                                 <rect key="frame" x="205" y="141" width="110" height="21"/>
-                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zz4-ej-1aP">
-                                <rect key="frame" x="205" y="103" width="191" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="3zn-b7-xIx"/>
-                                    <constraint firstAttribute="width" constant="191" id="d6T-0r-Llj"/>
+                                    <constraint firstAttribute="height" constant="21" id="Q7m-H4-2Uv"/>
+                                    <constraint firstAttribute="width" constant="110" id="nD9-r7-XhP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TfV-BT-V93">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zz4-ej-1aP">
+                                <rect key="frame" x="205" y="103" width="191" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="IwY-HY-Xyd"/>
+                                    <constraint firstAttribute="height" constant="21" id="kgP-8Z-cwX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="TfV-BT-V93">
                                 <rect key="frame" x="205" y="161" width="110" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="PlL-0V-dQg"/>
+                                    <constraint firstAttribute="width" constant="110" id="wRJ-cd-ewI"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Male"/>
                                     <segment title="Female"/>
                                 </segments>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RT7-yP-AuC">
-                                <rect key="frame" x="342" y="160" width="54" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Fave">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorite" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDD-XA-fTK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDD-XA-fTK">
                                 <rect key="frame" x="342" y="141" width="59" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="CZJ-SR-y46"/>
+                                    <constraint firstAttribute="height" constant="21" id="NtL-od-vqL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M3B-MB-NH5">
+                                <rect key="frame" x="342" y="161" width="92" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="53y-vD-THW"/>
+                                    <constraint firstAttribute="width" constant="92" id="G4a-fR-9lB"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Yes"/>
+                                    <segment title="No"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="D7W-6W-vby" secondAttribute="centerX" id="0wh-wq-r3b"/>
+                            <constraint firstItem="Wr8-6K-GLf" firstAttribute="top" secondItem="D7W-6W-vby" secondAttribute="bottom" constant="4" id="1zH-Jf-4qi"/>
                             <constraint firstItem="Lei-5M-9Gs" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leading" constant="20" id="62x-JV-TTJ"/>
+                            <constraint firstItem="zz4-ej-1aP" firstAttribute="leading" secondItem="D7W-6W-vby" secondAttribute="leading" id="8Dl-Ks-tf2"/>
+                            <constraint firstItem="D7W-6W-vby" firstAttribute="top" secondItem="Lei-5M-9Gs" secondAttribute="bottom" constant="27" id="AvC-RX-hp4"/>
+                            <constraint firstItem="tDD-XA-fTK" firstAttribute="top" secondItem="D7W-6W-vby" secondAttribute="bottom" constant="4" id="BhH-pS-AsB"/>
+                            <constraint firstItem="M3B-MB-NH5" firstAttribute="leading" secondItem="TfV-BT-V93" secondAttribute="trailing" constant="27" id="EOe-Sh-w9C"/>
+                            <constraint firstItem="TfV-BT-V93" firstAttribute="top" secondItem="D7W-6W-vby" secondAttribute="bottom" constant="24" id="HzJ-cp-OA5"/>
                             <constraint firstItem="Lei-5M-9Gs" firstAttribute="centerY" secondItem="MMQ-IT-qOo" secondAttribute="centerY" constant="-219.5" id="JzS-HC-Rnl"/>
-                            <constraint firstItem="zz4-ej-1aP" firstAttribute="top" secondItem="Lei-5M-9Gs" secondAttribute="bottom" constant="14" id="n5a-Qc-gsV"/>
+                            <constraint firstItem="M3B-MB-NH5" firstAttribute="top" secondItem="D7W-6W-vby" secondAttribute="bottom" constant="24" id="LBg-NS-M6a"/>
+                            <constraint firstItem="zz4-ej-1aP" firstAttribute="top" secondItem="Lei-5M-9Gs" secondAttribute="bottom" constant="14" id="c6C-1x-K7z"/>
                             <constraint firstAttribute="trailing" secondItem="Lei-5M-9Gs" secondAttribute="trailing" constant="20" id="pXB-RP-Zz6"/>
+                            <constraint firstItem="TfV-BT-V93" firstAttribute="leading" secondItem="D7W-6W-vby" secondAttribute="leading" id="sv8-BC-Rwo"/>
+                            <constraint firstAttribute="centerX" secondItem="zz4-ej-1aP" secondAttribute="centerX" id="x8Y-9S-C3R"/>
+                            <constraint firstItem="tDD-XA-fTK" firstAttribute="leading" secondItem="Wr8-6K-GLf" secondAttribute="trailing" constant="27" id="xNV-YC-qVi"/>
+                            <constraint firstItem="TfV-BT-V93" firstAttribute="leading" secondItem="Wr8-6K-GLf" secondAttribute="leading" id="yo5-mK-cYi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="Lei-5M-9Gs" id="sCT-F7-F6f"/>
+                        <outlet property="favoriteControl" destination="M3B-MB-NH5" id="zkO-N8-0ro"/>
+                        <outlet property="friendName" destination="D7W-6W-vby" id="PrC-u7-bNn"/>
+                        <outlet property="genderControl" destination="TfV-BT-V93" id="WCf-v4-hTJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
