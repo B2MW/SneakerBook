@@ -67,4 +67,9 @@
     return cell;
 }
 
+-(IBAction)unwindFriendDetailViewController:(UIStoryboardSegue *)saveButton
+{
+    [self.tableView reloadData];
+}
+
 @end

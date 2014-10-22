@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "AppDelegate.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *friendName;
@@ -26,10 +27,10 @@
 
     if (!(self.person.gender == nil))
     {
-        if (self.person.gender == 0) {
+        if ([self.person.gender  isEqual: @0]) {
             self.genderControl.selectedSegmentIndex = 0;
         }
-        else
+        else if ([self.person.gender  isEqual: @1])
         {
             self.genderControl.selectedSegmentIndex = 1;
         }
@@ -37,14 +38,43 @@
 
     if (!(self.person.favorite == nil))
     {
-        if (self.person.favorite == 0) {
-            self.genderControl.selectedSegmentIndex = 1;
+        if ([self.person.favorite  isEqual: @0]) {
+            self.favoriteControl.selectedSegmentIndex = 0;
         }
-        else
+        else if ([self.person.favorite  isEqual: @1])
         {
-            self.genderControl.selectedSegmentIndex = 0;
+            self.favoriteControl.selectedSegmentIndex = 1;
         }
     }
+}
+
+- (IBAction)saveUpdates:(id)sender
+{
+    if (self.genderControl.selectedSegmentIndex == 0)
+    {
+        self.person.gender = @0;
+    }
+    else if (self.genderControl.selectedSegmentIndex == 1)
+    {
+        self.person.gender = @1;
+    }
+
+    if (self.favoriteControl.selectedSegmentIndex == 0)
+    {
+        self.person.favorite = @0;
+    }
+    else if (self.favoriteControl.selectedSegmentIndex == 1)
+    {
+        self.person.favorite = @1;
+    }
+
+    [self.person.managedObjectContext save:nil];
+}
+
+
+- (IBAction)undoChanges:(id)sender
+{
+
 }
 
 @end
