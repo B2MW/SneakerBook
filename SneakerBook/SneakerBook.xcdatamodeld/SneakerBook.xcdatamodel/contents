@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Event">
-        <attribute name="timeStamp" optional="YES" attributeType="Date"/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A389" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Person" representedClassName="Person" syncable="YES">
+        <attribute name="favorite" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sneaker" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sneaker" inverseName="person" inverseEntity="Sneaker" syncable="YES"/>
+    </entity>
+    <entity name="Sneaker" representedClassName="Sneaker" syncable="YES">
+        <attribute name="sneakerBrand" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sneakerColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sneakerCost" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sneakerSize" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="sneaker" inverseEntity="Person" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
+        <element name="Person" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Sneaker" positionX="-54" positionY="-9" width="128" height="28"/>
     </elements>
 </model>
