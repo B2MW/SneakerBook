@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A389" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Comment" syncable="YES">
+    <entity name="Comment" representedClassName="Comment" syncable="YES">
         <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="postTime" optional="YES" attributeType="Date" syncable="YES"/>
-        <relationship name="sneaker" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" syncable="YES"/>
+        <relationship name="person" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Person" inverseName="comment" inverseEntity="Person" syncable="YES"/>
     </entity>
     <entity name="Person" representedClassName="Person" syncable="YES">
         <attribute name="favorite" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="gender" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sneakerPhoto" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="comment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Comment" inverseName="person" inverseEntity="Comment" syncable="YES"/>
         <relationship name="sneaker" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sneaker" inverseName="person" inverseEntity="Sneaker" syncable="YES"/>
     </entity>
     <entity name="Sneaker" representedClassName="Sneaker" syncable="YES">
@@ -20,8 +21,8 @@
         <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="sneaker" inverseEntity="Person" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Person" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="Person" positionX="-63" positionY="-18" width="128" height="133"/>
         <element name="Sneaker" positionX="-54" positionY="-9" width="128" height="118"/>
-        <element name="Comment" positionX="-45" positionY="45" width="128" height="90"/>
+        <element name="Comment" positionX="-45" positionY="45" width="128" height="88"/>
     </elements>
 </model>

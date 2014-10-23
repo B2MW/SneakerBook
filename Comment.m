@@ -1,21 +1,19 @@
 //
-//  Person.m
+//  Comment.m
 //  SneakerBook
 //
 //  Created by Bradley Walker on 10/22/14.
 //  Copyright (c) 2014 BlackSummerVentures. All rights reserved.
 //
 
+#import "Comment.h"
 #import "Person.h"
-#import "Sneaker.h"
 
 
-@implementation Person
+@implementation Comment
 
-@dynamic name;
-@dynamic favorite;
-@dynamic gender;
-@dynamic sneaker;
-@dynamic sneakerPhoto;
+@dynamic comment;
+@dynamic postTime;
+@dynamic person;
 
 @end

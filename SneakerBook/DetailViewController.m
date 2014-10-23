@@ -108,11 +108,12 @@
     [self.person.managedObjectContext save:nil];
 }
 
-
+#pragma mark - Manage Undoing User Profile Updates
 - (IBAction)undoChanges:(id)sender
 {
     self.genderControl.selectedSegmentIndex = self.person.gender.integerValue;
     self.favoriteControl.selectedSegmentIndex = self.person.favorite.integerValue;
+    self.imageView.image = [UIImage imageWithData:self.person.sneakerPhoto];
 }
 
 @end

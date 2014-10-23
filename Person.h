@@ -9,15 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Sneaker;
+@class Comment, Sneaker;
 
 @interface Person : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * favorite;
 @property (nonatomic, retain) NSNumber * gender;
+@property (nonatomic, retain) NSData * sneakerPhoto;
 @property (nonatomic, retain) NSSet *sneaker;
-@property (nonatomic, retain) NSData *sneakerPhoto;
+@property (nonatomic, retain) Comment *comment;
 @end
 
 @interface Person (CoreDataGeneratedAccessors)

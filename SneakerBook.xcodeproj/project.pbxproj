@@ -16,8 +16,9 @@
 		4C4E250019F8359E001A0F91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E24FF19F8359E001A0F91 /* Images.xcassets */; };
 		4C4E250319F8359E001A0F91 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E250119F8359E001A0F91 /* LaunchScreen.xib */; };
 		4C4E250F19F8359E001A0F91 /* SneakerBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E250E19F8359E001A0F91 /* SneakerBookTests.m */; };
-		4C4E252C19F852C9001A0F91 /* Sneaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E252B19F852C9001A0F91 /* Sneaker.m */; };
-		4C4E252F19F852CA001A0F91 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E252E19F852CA001A0F91 /* Person.m */; };
+		4C4E253219F88A62001A0F91 /* Sneaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E253119F88A62001A0F91 /* Sneaker.m */; };
+		4C4E253519F88A63001A0F91 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E253419F88A63001A0F91 /* Comment.m */; };
+		4C4E253819F88A63001A0F91 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E253719F88A63001A0F91 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +48,12 @@
 		4C4E250819F8359E001A0F91 /* SneakerBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SneakerBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4E250D19F8359E001A0F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C4E250E19F8359E001A0F91 /* SneakerBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SneakerBookTests.m; sourceTree = "<group>"; };
-		4C4E252A19F852C9001A0F91 /* Sneaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sneaker.h; sourceTree = "<group>"; };
-		4C4E252B19F852C9001A0F91 /* Sneaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sneaker.m; sourceTree = "<group>"; };
-		4C4E252D19F852CA001A0F91 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		4C4E252E19F852CA001A0F91 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		4C4E253019F88A62001A0F91 /* Sneaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sneaker.h; path = ../Sneaker.h; sourceTree = "<group>"; };
+		4C4E253119F88A62001A0F91 /* Sneaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sneaker.m; path = ../Sneaker.m; sourceTree = "<group>"; };
+		4C4E253319F88A63001A0F91 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = ../Comment.h; sourceTree = "<group>"; };
+		4C4E253419F88A63001A0F91 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = ../Comment.m; sourceTree = "<group>"; };
+		4C4E253619F88A63001A0F91 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../Person.h; sourceTree = "<group>"; };
+		4C4E253719F88A63001A0F91 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ../Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +105,12 @@
 				4C4E24FF19F8359E001A0F91 /* Images.xcassets */,
 				4C4E250119F8359E001A0F91 /* LaunchScreen.xib */,
 				4C4E24F319F8359E001A0F91 /* SneakerBook.xcdatamodeld */,
-				4C4E252D19F852CA001A0F91 /* Person.h */,
-				4C4E252E19F852CA001A0F91 /* Person.m */,
-				4C4E252A19F852C9001A0F91 /* Sneaker.h */,
-				4C4E252B19F852C9001A0F91 /* Sneaker.m */,
+				4C4E253619F88A63001A0F91 /* Person.h */,
+				4C4E253719F88A63001A0F91 /* Person.m */,
+				4C4E253319F88A63001A0F91 /* Comment.h */,
+				4C4E253419F88A63001A0F91 /* Comment.m */,
+				4C4E253019F88A62001A0F91 /* Sneaker.h */,
+				4C4E253119F88A62001A0F91 /* Sneaker.m */,
 				4C4E24EC19F8359E001A0F91 /* Supporting Files */,
 			);
 			path = SneakerBook;
@@ -237,13 +242,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C4E253519F88A63001A0F91 /* Comment.m in Sources */,
 				4C4E24FB19F8359E001A0F91 /* DetailViewController.m in Sources */,
+				4C4E253819F88A63001A0F91 /* Person.m in Sources */,
 				4C4E24F819F8359E001A0F91 /* MasterViewController.m in Sources */,
-				4C4E252F19F852CA001A0F91 /* Person.m in Sources */,
 				4C4E24F519F8359E001A0F91 /* SneakerBook.xcdatamodeld in Sources */,
 				4C4E24F219F8359E001A0F91 /* AppDelegate.m in Sources */,
 				4C4E24EF19F8359E001A0F91 /* main.m in Sources */,
-				4C4E252C19F852C9001A0F91 /* Sneaker.m in Sources */,
+				4C4E253219F88A62001A0F91 /* Sneaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
