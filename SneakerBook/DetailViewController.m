@@ -14,6 +14,7 @@
 @property (strong, nonatomic) IBOutlet UISegmentedControl *genderControl;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *favoriteControl;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UIView *topContainer;
 
 
 @end
@@ -24,6 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.topContainer.hidden = YES;
 
     self.friendName.text = self.person.name;
 
@@ -73,6 +75,15 @@
     self.imageView.image = selectedImage;
     [picker dismissViewControllerAnimated:YES completion:NULL];
 }
+
+#pragma mark - Manage User Comments
+- (IBAction)onCommentButtonPressed:(id)sender
+{
+    if ([self.topContainer isHidden]) {
+        self.topContainer.hidden = NO;
+    }
+}
+
 
 #pragma mark - Saving Updated Member Profiles
 - (IBAction)saveUpdates:(id)sender

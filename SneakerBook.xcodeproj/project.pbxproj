@@ -19,6 +19,7 @@
 		4C4E253219F88A62001A0F91 /* Sneaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E253119F88A62001A0F91 /* Sneaker.m */; };
 		4C4E253519F88A63001A0F91 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E253419F88A63001A0F91 /* Comment.m */; };
 		4C4E253819F88A63001A0F91 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E253719F88A63001A0F91 /* Person.m */; };
+		4C4E253B19F930D4001A0F91 /* TopContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E253A19F930D4001A0F91 /* TopContainerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		4C4E253419F88A63001A0F91 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = ../Comment.m; sourceTree = "<group>"; };
 		4C4E253619F88A63001A0F91 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../Person.h; sourceTree = "<group>"; };
 		4C4E253719F88A63001A0F91 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ../Person.m; sourceTree = "<group>"; };
+		4C4E253919F930D4001A0F91 /* TopContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopContainerViewController.h; sourceTree = "<group>"; };
+		4C4E253A19F930D4001A0F91 /* TopContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopContainerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 				4C4E24F719F8359E001A0F91 /* MasterViewController.m */,
 				4C4E24F919F8359E001A0F91 /* DetailViewController.h */,
 				4C4E24FA19F8359E001A0F91 /* DetailViewController.m */,
+				4C4E253919F930D4001A0F91 /* TopContainerViewController.h */,
+				4C4E253A19F930D4001A0F91 /* TopContainerViewController.m */,
 				4C4E24FC19F8359E001A0F91 /* Main.storyboard */,
 				4C4E24FF19F8359E001A0F91 /* Images.xcassets */,
 				4C4E250119F8359E001A0F91 /* LaunchScreen.xib */,
@@ -250,6 +255,7 @@
 				4C4E24F219F8359E001A0F91 /* AppDelegate.m in Sources */,
 				4C4E24EF19F8359E001A0F91 /* main.m in Sources */,
 				4C4E253219F88A62001A0F91 /* Sneaker.m in Sources */,
+				4C4E253B19F930D4001A0F91 /* TopContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
