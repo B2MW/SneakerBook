@@ -30,7 +30,6 @@
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError)
      {
          NSArray *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&connectionError];
-         NSLog(@"%@", json);
 
          for (NSString *personName in json) {
              NSEntityDescription *newPerson = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:self.managedObjectContext];
@@ -64,6 +63,16 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
 
     cell.textLabel.text = person.name;
+
+    if (person.sneakerPhoto == nil)
+    {
+        cell.imageView.image = [UIImage imageNamed:@"defaultSneaker"];
+    }
+    else
+    {
+        cell.imageView.image = [UIImage imageWithData:person.sneakerPhoto];
+    }
+    
     return cell;
 }
 

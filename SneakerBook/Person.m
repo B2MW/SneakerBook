@@ -16,5 +16,6 @@
 @dynamic favorite;
 @dynamic gender;
 @dynamic sneaker;
+@dynamic sneakerPhoto;
 
 @end

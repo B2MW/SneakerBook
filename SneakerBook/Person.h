@@ -17,6 +17,7 @@
 @property (nonatomic, retain) NSNumber * favorite;
 @property (nonatomic, retain) NSNumber * gender;
 @property (nonatomic, retain) NSSet *sneaker;
+@property (nonatomic, retain) NSData *sneakerPhoto;
 @end
 
 @interface Person (CoreDataGeneratedAccessors)
